@@ -1,0 +1,155 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Transactions Page Styling */
+.transactions-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.transactions-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.transactions-table th,
+.transactions-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.transactions-table th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.expense {
+  color: red;
+}
+
+.income {
+  color: green;
+}
+
+.add-btn {
+  background: #4CAF50;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.edit-btn, .delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.edit-btn {
+  color: blue;
+}
+
+.delete-btn {
+  color: red;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+  .transactions-container {
+    padding: 10px;
+  }
+
+  .transactions-table th,
+  .transactions-table td {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .add-btn {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}
+
+.dashboard-container {
+  padding: 20px;
+}
+
+.summary-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.card {
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  background-color: #fff;
+}
+
+.income { background-color: #d4edda; } /* Light Green */
+.expense { background-color: #f8d7da; } /* Light Red */
+.balance { background-color: #cce5ff; } /* Light Blue */
+.top-category { background-color: #fff3cd; } /* Light Yellow */
+
+.charts-container {
+  text-align: center;
+  margin: 20px auto;
+  max-width: 900px; /* Adjust this value for best results */
+}
+
+.chart {
+  width: 80%;  /* Adjust width as needed */
+  max-width: 700px;
+  margin: 20px auto; /* Centers each chart */
+}
